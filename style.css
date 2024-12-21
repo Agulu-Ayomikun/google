@@ -1,0 +1,251 @@
+body{background:darkgray;}
+
+body#idClassPage{background-color: white;}
+
+h1#main-title{font-family: Georgia, 'Times New Roman', Times, serif; background-color: brown;}
+
+.second-header{color: red;
+    text-align: center; font-weight: normal;
+}
+
+h1{font-size: xx-large; font-family: Arial, Helvetica, sans-serif; color:goldenrod}
+
+h2{font-size: x-large; font-family: 'Times New Roman', Times, serif; color: white;}
+
+p{font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:  color: white;
+}
+
+ol{font-size: medium; font-family: sans-serif; color: white;}
+
+/*Style for descendant Selector lecture*/
+.primary-box {
+    background-color: goldenrod;
+    
+}
+
+.primary-box h2{font-size: xx-large;}
+
+.primary-box p{font-size: medium; color: black;}
+
+.primary-box p em{color: white;}
+
+.secondary-box {
+    background-color: red;
+}
+
+.secondary-box h2{font-size: xx-large;}
+
+.secondary-box p{font-size: medium; 
+    font-family: sans-serif;
+    color: rgb(15, 11, 255);
+}
+
+/*styles for the grouping selector lecture*/
+
+#mainContainer{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.primary-box, .secondary-box{margin: 60px 40px;}
+
+,h2,h3,h4,h5{ text-align: center;}
+
+
+
+/* box html styles*/
+
+#box{
+    background: blue;
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+
+/*CSS Colors*/
+
+body#colors{
+    background: rgb(1, 20, 44);
+}
+
+ #colors #container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(138, 3, 3, 0.253);
+}
+
+h1{
+    color: white;
+}
+
+#colors #box{
+    background: linear-gradient( to bottom left, blue, rgba(255, 123, 0, 0.747));
+}
+
+/* Shadows*/
+
+#shadows #container{
+    width: 600px;
+    margin: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fc3;
+    box-shadow: 5px 5px 8px 6px white;
+}
+
+#shadows h1{
+    text-shadow:2px 2px  rgba(0, 0, 0, 0.568);
+}
+
+
+/*columns css*/
+
+#threecolumns{
+    -webkit-column-count: 3;
+    color: white;
+
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+
+    -webkit-column-rule-style:inset;
+    column-rule-style: inset;
+
+    -webkit-column-rule-width: 1px;
+    column-rule-width: 1px;
+
+    -webkit-column-rule-color:blue;
+    column-rule-color: blue;
+    
+}
+
+
+/* Animations & Transitons*/
+
+@keyframes box{
+    from{border-radius: 40px; background-color: blue;top:0; left:0;}
+    to{border-radius: 100px; background-color: red;top:100px; left:100px;}
+}
+
+#animations #box{
+    position: relative;
+/*Animations Shorthand*/
+    /*animation:box 10s ease-in-out 2s 3 alternate*/
+
+    animation-name: box;
+    animation-duration:10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction:alternate;
+
+}
+
+#box2{
+    position: relative;
+    background: red;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+#box2:hover {
+   background: blue;
+   height: 300px;
+   width: 300px;
+   transition: height 4s width 2s background 20s;
+}
+
+
+/*Buttons*/
+.button{
+    display: inline-block;
+    background:#4285f4;
+    background: linear-gradient(purple, pink);
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin:10px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+.button:hover{
+    border-color:#888;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.979);
+    background: purple;
+    background: linear-gradient(to top, purple, pink);
+}
+
+/*Orbit animation style*/
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#universe{
+    background: url(Images/real\ star.jpg);
+    
+    
+}
+
+.image{
+    resize: -19px;
+}
+
+#stars{
+    /*i tried doing what he did but  i wasn't getting the same result so i did it my own way*/
+}
+
+#sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+
+    height: 200px;
+    width: 200px;
+
+    -webkit-border-radius:100%;
+
+    background: orange;
+    background: -webkit-radial-gradient(#d6a800, #c06300);
+
+    -webkit-box-shadow:0 0 50px #ffcc00
+
+}
+
+#earthOrbit{
+    border: solid 1px red;
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    z-index: 4;
+    height: 700px;
+    width: 600px;
+
+    -webkit-border-radius:100%;
+    border-radius: 100%;
+}
+
+#earth{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+}
+

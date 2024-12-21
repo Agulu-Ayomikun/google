@@ -1,0 +1,285 @@
+/* Text Formatting with CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+body{
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h2{
+    font-size: x-large;
+}
+
+h3{
+    font-size: larger;
+    letter-spacing: 0px;
+    text-indent: 80px;
+    line-height: normal;
+    }
+
+span{
+    text-decoration: line-through;
+}
+
+em{
+    text-transform: capitalize;
+}
+
+strong{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* CSS Borders Lecture */
+
+.border-box{
+    background: #fc3;
+    margin: 0 0 20px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+}
+
+#box1{border: solid 1px black;}
+#box2{ border: dashed 1px black;}
+#box3{border: dotted 1px black;}
+#box4{border: double 3px black;}
+#box5{border: solid 4px black;}
+#box6{border: dashed 4px black;}
+#box7{border: dotted 4px black;}
+#box8{border: double 6px black;}
+
+/* styling-links */
+
+#styling-links{
+    background: #333;
+}
+
+#styling-links #container{
+    background: white;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    padding: 40px;    
+}
+
+a{  
+    display: inline-block;
+}
+/* unvisited links*/
+a:link{
+color: blue;
+}
+/*visited links*/
+a:visited{
+color: purple
+}
+/* hovered/ mouse-over or tapping the link*/
+a:hover{
+color: blue;
+}
+/* active or holding down the link */
+a:active{
+color: darkblue;
+}
+
+a#link-1:link{ 
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a#link-1:hover{
+    background:#fc3
+    color:white 
+}
+
+
+/* Styling Web Form Lecture*/
+
+#container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+form{
+  margin-top: 20px;
+}
+
+
+fieldset{ 
+    padding: 40px;
+    border: solid 1px #aaa;
+    background: url(Images/Form\ Background.jfif)
+}
+
+fieldset legend{
+    background:;
+    padding: 10px;
+    border: solid 1px #aaa;
+}
+
+
+input [type="text"], 
+input[type="tel"],
+input[type="email"],
+textarea{ 
+padding: 10px;
+margin: 0 0 10px;
+border: solid 1px #454545;
+display: block;
+width: 50%;
+font-size: 14px;
+color: #777;
+font-family: monospace;
+text-transform: uppercase;
+}
+
+label{
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    width: 46%;
+    padding: 2%;
+    color: black;
+}
+
+
+
+input[type="submit"]{
+    background:none;
+    background-color: orangered;
+    color: white;
+    height: 40px;
+    border: solid 1px #777;
+    padding: 0 40px;
+}
+
+
+/*CSS floats*/
+
+#floats{
+    background-color:#333
+}
+
+#floats #container{
+    background: white;
+    padding: 20px;
+}
+
+#Ayo{
+    float: right;
+    margin: 10px 0 10px 20px; 
+}
+
+
+#mainColumn{
+    width: 250px;
+    float: left; 
+    background: #555;
+    color:white;  
+    padding: 50px;
+}
+
+#sidebar{
+    width: 140px;
+    float: right;
+    background: #fc3;
+    padding: 50px;
+}
+
+.clearfix:after{
+    content: "" ;
+    display: table;
+    clear: both;
+}
+
+#footer{
+    clear: both;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+#paragraph1{
+    margin: 20px 0 10px 10px;
+}
+
+#paragraph2{
+    margin: 20px 10px 0 10px;
+}
+
+
+/* Positioning lecture*/
+
+#positioning{
+    background: #1b4e5e;
+}
+
+#container{
+    background: white;
+    padding: 20px;
+}
+
+#positioning h2{
+    font-size: 18px;
+}
+
+.box{
+    background: #db4e3e;
+    color: white;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#relative{
+    position: relative;
+    top: 10px;
+    left: -25px;
+}
+
+#absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+#fixed{
+    position: fixed;
+    bottom:100px;
+    right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+

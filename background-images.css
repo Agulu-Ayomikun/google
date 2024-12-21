@@ -1,0 +1,31 @@
+.background-example{
+    height: 300px;
+    width: 300px;
+    border: solid 4px black;
+    color: white;
+}
+
+#background-1{
+    /* By default, background images repeat X & Y and are positioned top left */
+    background-image: url('Images/Tech.jpeg');
+}
+
+#background-2{
+    background-color: #a3d;
+}
+
+
+#background-3{
+    background-image: url('Images/Church\ Background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#background-4{
+    background:#ccc url(Images/images.jpeg) bottom left repeat-x;
+}
+
+
+
+
+
